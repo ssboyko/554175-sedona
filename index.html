@@ -81,13 +81,40 @@
         <h2>Заинтересовались?</h2>
         <p class="booking-info">Укажите предполагаемые даты поездки,
         <p class="booking-info"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <!-- Здесь будет форма -->
+	        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+	        	<h2 class="booking-form-title">Поиск гостиницы в Седоне</h2>
+	          	<p class="booking-item">
+	          		<label class="arrival-date">Дата заезда:
+	          			<input type="text" name="date-in" value="24 апреля 2017">
+	          			<span class="calendar-icon"></span>
+	          		</label>
+	          	</p>
+	          	<p class="booking-item">
+	          		<label class="departure-date">Дата выезда:
+	          			<input type="text" name="date-out" value="4 июля 2017">
+	          			<span class="calendar-icon"></span>
+	          		</label>
+	          	</p>
+	          	<p class="adults">
+	          		<label for="adults-guests">Взрослые:</label>
+	          			<button type="button" class="booking-form-minus" aria-label="Minus"></button>
+	          			<input id="adults-guests" type="text" name="guests" value="2">
+	          			<button type="button" class="booking-form-plus" aria-label="Plus"></button>
+	          	</p>
+	          	<p class="children">
+	          		<label for="children-guests">Дети:</label>
+	          			<button type="button" class="booking-form-minus" aria-label="Minus"></button>
+	          			<input id="children-guests" type="text" name="kids-guests" value="0">
+	          			<button type="button" class="booking-form-plus" aria-label="Plus"></button>
+	          	</p>
+	          	<button class="button" type="submit">Найти</button>
+	        </form>  
       </section>
     </main>
    <footer class="main-footer">
-   	 <span class="footer-hashtag">
-        <p>#visitSEDONA</p>
-     </span>
+   	 <div class="footer-hashtag">
+        <a class="hastag" href="https://www.instagram.com/htmlacademy">#visitSEDONA</a>
+     </div>
    	 <div class="footer-social">
    	 	<ul>	
 		    <li><a class="social social-tw" href="https://twitter.com/htmlacademy_ru">Twitter</a></li>
