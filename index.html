@@ -93,7 +93,7 @@
         <p class="booking-info">Укажите предполагаемые даты поездки,
         <p class="booking-info"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 	        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
-	        	<h2 class="booking-form-title">Поиск гостиницы в Седоне</h2>
+	        	<button type="button" class="booking-form-title" aria-label="Поиск гостиницы">Поиск гостиницы в Седоне</button>
 	          	<p class="booking-item">
 	          		<label class="arrival-date">Дата заезда:
 	          			<input type="text" name="date-in" value="24 апреля 2017">
@@ -108,15 +108,15 @@
 	          	</p>
 	          	<p class="adults">
 	          		<label for="adults-guests">Взрослые:</label>
-	          			<button type="button" class="booking-form-minus" aria-label="Minus"></button>
+	          			<button class="booking-form-minus" aria-label="уменьшить число взрослых">&ndash;</button>
 	          			<input id="adults-guests" type="text" name="guests" value="2">
-	          			<button type="button" class="booking-form-plus" aria-label="Plus"></button>
+	          			<button class="booking-form-plus" aria-label="увеличить число взрослых">+</button>
 	          	</p>
 	          	<p class="children">
 	          		<label for="children-guests">Дети:</label>
-	          			<button type="button" class="booking-form-minus" aria-label="Minus"></button>
+	          			<button class="booking-form-minus" aria-label="уменьшить число детей">&ndash;</button>
 	          			<input id="children-guests" type="text" name="kids-guests" value="0">
-	          			<button type="button" class="booking-form-plus" aria-label="Plus"></button>
+	          			<button class="booking-form-plus" aria-label="увеличить число детей">+</button>
 	          	</p>
 	          	<button class="button" type="submit">Найти</button>
 	        </form>  

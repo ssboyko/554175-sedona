@@ -148,6 +148,30 @@ a {
   color: #333333;
 }
 
+.booking-form-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357; 
+}
+
+  
+
+.booking-form-title:hover {
+  
+  background-color: #604e43; 
+}
+
+.booking-form-title:active {
+ 
+  color: rgba(255, 255, 255, 0.302);
+  background-color: #503e33; 
+  
+}
+
+
+
 .booking-item {
   font-size: 14px;
   line-height: 26px;
@@ -196,6 +220,13 @@ a {
   background-color: #f2f2f2;
 }
 
+.children {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
 .children input {
   font-size: 14px;
   line-height: 26px;
@@ -208,41 +239,56 @@ a {
 }
 
 
-/* Не знаю как сделать эти кнопки, картинками?
-.booking-form-minus button
+
+
+.booking-form-minus 
 {
-  background-image: url("img/minus.svg");
+  display: inline-block;
+  font-size: 26px;
+  line-height: 26px;
+  color: #a9a9a9;
   border: none;
 }
 
-.booking-form-minus button:hover
+.booking-form-minus:hover
 {
-  background-image: url("img/minus-hover.svg");
+  font-size: 26px;
+  line-height: 26px;
+  color: #000000;
   border: none;
 }
 
-.booking-form-minus button:active
+.booking-form-minus:active
 {
-  background-image: url("img/minus-active.svg");
+  font-size: 26px;
+  line-height: 26px;
+  color: #81b3d2;
   border: none;
 }
 
-.booking-form-plus button {
-  background-image: url("img/plus.svg");
+.booking-form-plus {
+  font-size: 26px;
+  line-height: 26px;
+  color: #a9a9a9;
   border: none;
 }
-.booking-form-plus button:hover {
-  background-image: url("img/plus-hover.svg");
-  border: none;
-}
-
-.booking-form-plus button:active
+.booking-form-plus:hover 
 {
-  background-image: url("img/plus-active.svg");
+  font-size: 26px;
+  line-height: 26px;
+  color: #000000;
   border: none;
 }
 
-*/
+.booking-form-plus:active
+{
+  font-size: 26px;
+  line-height: 26px;
+  color: #81b3d2;
+  border: none;
+}
+
+
 
 .button {
   font-size: 21px;
@@ -283,6 +329,7 @@ a {
 
 .footer-social ul {
   list-style: none;
+  justify-content: space-between;
 }
 
 .footer-social a {
@@ -382,9 +429,9 @@ a {
   background-color: #000000; 
 }
 
-/* Не реботает! Почему?
+ Не реботает! Почему?
 
-.show-result button {
+.show-result  {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -397,13 +444,14 @@ a {
 	background-color: #ffffff;
 }
 
-*/
+
 
 .sorting h2 {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+  font-weight: 700;
 }
 
 .sorting p {
@@ -411,6 +459,7 @@ a {
   line-height: 18px;
   color: #000000;
   background-color: #ffffff;
+  font-weight: 400;
 }
 
 .sorting-price,
@@ -420,15 +469,18 @@ a {
   line-height: 18px;
 }
 
+.sorting-list {
+	list-style: none;
+}
+
 .sorting-active {
 	color: #81b3d2;
-	background-color: #000000;
+	background-color: #ffffff;
 }
 
 .sorting-disabled {
-	color: #000000;
-	opacity: 0.3;
-	background-color: #ffffff;
+	color: #cacaca;
+	background-color: #fefefe;
 }
 
 
@@ -436,6 +488,7 @@ a {
 .sorting-switch-down a {
 	color: #cacaca;
 	background-color: #000000;
+	text-decoration: underline;
 }
 
 .sorting-switch-up a:hover,
@@ -450,3 +503,72 @@ a {
 	background-color: #ffffff;
 }
 
+.catalog-item-title {
+	font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    font-weight:700;
+}
+
+.catalog-item-title:hover {
+	color: #81b3d2;
+}
+
+.catalog-item-title:active {
+	color: rgba(0, 0, 0, 0.302);
+}
+
+
+.catalog-item-category {
+	font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.button-details {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2; 
+}
+
+
+.button-details:hover {
+	background-color: #669ec0;
+}
+
+.button-details:active {
+	color: rgba(255, 255, 255, 0.302);
+	background-color: #5496bd;
+}
+
+.button-booking {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357; 
+}
+
+.button-booking:hover {
+  background-color: #604e43;
+}
+
+.button-booking:active {
+  color: rgba(255, 255, 255, 0.302);
+  background-color: #503e33;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.rating {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+  background-color: #f2f2f2;
+}
