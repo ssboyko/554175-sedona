@@ -1,0 +1,452 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  background-color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  background-color: #b2b2b2;
+}
+
+.site-navigation a:active {
+  background-color: #766357;
+}
+
+.features-text {
+  list-style: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h2 {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.feature-item {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
+}
+
+.feature-item-blue {
+  list-style: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+  background-image: url("img/feature-item-bg-blue.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+
+.feature-item-blue h2 {
+  list-style: none;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+.feature-item-advantage h3 {
+  list-style: none;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.feature-item-advantage {
+  list-style: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+
+
+.feature-item-gray {
+  list-style: none;
+  color: #ffffff; 
+
+  background-color: #eeeeee;
+  background-image: url("img/feature-item-bg-gray.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+
+
+.booking h2 {
+  
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.booking-info {
+  
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.booking-item {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.booking-item input {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.booking-item input:hover {
+  
+  background-color: #ebebeb;
+  border: none;
+ 
+}
+
+.booking-item input:focus {
+
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  border: none;
+}
+
+.adults {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.adults input {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.children input {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  border: none;
+  background-color: #f2f2f2;
+
+}
+
+
+/* Не знаю как сделать эти кнопки, картинками?
+.booking-form-minus button
+{
+  background-image: url("img/minus.svg");
+  border: none;
+}
+
+.booking-form-minus button:hover
+{
+  background-image: url("img/minus-hover.svg");
+  border: none;
+}
+
+.booking-form-minus button:active
+{
+  background-image: url("img/minus-active.svg");
+  border: none;
+}
+
+.booking-form-plus button {
+  background-image: url("img/plus.svg");
+  border: none;
+}
+.booking-form-plus button:hover {
+  background-image: url("img/plus-hover.svg");
+  border: none;
+}
+
+.booking-form-plus button:active
+{
+  background-image: url("img/plus-active.svg");
+  border: none;
+}
+
+*/
+
+.button {
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button:active {
+  opacity: 0.3;
+  background-color: #5496bd;
+}
+
+.main-footer  {
+  color: #000000;
+
+  background-color: #fdfdfd;
+}
+
+.footer-hashtag a{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  color:#000000;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social a {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.footer-social a:active {
+  color: #ffffff;
+  background-color: #5496bd;
+}
+
+.footer-copyright .button {
+  color: #9f9d9d;
+
+  background-color: #ffffff;
+}
+
+.footer-copyright .button:hover {
+  color: #81b3d2;
+
+  background-color: #ffffff;
+}
+
+.footer-copyright .button:active {
+  color: #81b3d2;
+
+  background-color: #bdbbbc;
+}
+
+
+/* hotels.html */
+.inner-page {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.site-navigation-current {
+	color: #766357;
+	background-color: #ffffff;
+}
+
+.filter-option {
+	list-style: none;
+
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #000000; 
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 21px;
+}
+
+.filter-input + label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #000000; 
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #ffffff;
+  background-color: #000000; 
+}
+
+.filter-input:disabled + label {
+  color: #6a6a6a;
+  background-color: #000000; 
+}
+
+/* Не реботает! Почему?
+
+.show-result button {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: transparent; 
+}
+
+.show-result button:hover {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+*/
+
+.sorting h2 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.sorting p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.sorting-price,
+.sorting-type,
+.sorting-rating {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-active {
+	color: #81b3d2;
+	background-color: #000000;
+}
+
+.sorting-disabled {
+	color: #000000;
+	opacity: 0.3;
+	background-color: #ffffff;
+}
+
+
+.sorting-switch-up a,
+.sorting-switch-down a {
+	color: #cacaca;
+	background-color: #000000;
+}
+
+.sorting-switch-up a:hover,
+.sorting-switch-down a:hover {
+	color: #231f20;
+	background-color: #ffffff;
+}
+
+.sorting-switch-up a:active,
+.sorting-switch-down a:active {
+	color: #81b3d2;
+	background-color: #ffffff;
+}
+
