@@ -20,32 +20,33 @@
         </ul>
       </nav>
     </header>     
-   <main>
+   <main class="content">
         <h1 class="visually-hidden">Инфрастуктура</h1>
             <section class="filters">
-                <h2 class="visually-hidden">Фильтр инфраструктуры</h2>
-                  <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                    <fieldset>
-                      <legend>Инфрастуктура</legend>
-                        <ul>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
-                                <label for="filter-pool">Бассейн</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
-                              <label for="filter-parking">Парковка</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wifi">
-                              <label for="filter-wifi">WI-FI</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                  </form>
-            </section>
+                <div class="infrastructure">
+                    <h2 class="visually-hidden">Фильтр инфраструктуры</h2>
+                      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                        <fieldset>
+                          <legend>Инфрастуктура</legend>
+                            <ul>
+                                <li class="filter-option">
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                                    <label for="filter-pool">Бассейн</label>
+                                </li>
+                                <li class="filter-option">
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                                  <label for="filter-parking">Парковка</label>
+                                </li>
+                                <li class="filter-option">
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wifi">
+                                  <label for="filter-wifi">WI-FI</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                      </form>
+                </div>
         <h1 class="visually-hidden">Тип жилья</h1>
-            <section class="filters">
+              <div class="accommodation">
                 <h2 class="visually-hidden">Фильтр типа жилья</h2>
                   <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
@@ -66,10 +67,9 @@
                         </ul>
                     </fieldset>
                   </form>
-
-            </section>
+              </div>
         <h1 class="visually-hidden">Стоимость в сутки (Р):</h1>
-            <section class="filters">
+              <div class="price-filter">
                 <h2 class="visually-hidden">Фильтр стоимости</h2>
                  <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
@@ -84,10 +84,11 @@
                           <button type ="button" class="show-result" aria-label="показать">Показать</button>
                     </fieldset>
                  </form>
+              </div>
             </section>   
         <section class="sorting">
-          <h2 class="visually-displayed">Найдено: 3</h2>
-          <p class="visually-displayed"> Сортировка: </p>
+          <h2 class="finded">Найдено: 3</h2>
+          <p class="sort-type"> Сортировка: </p>
               <ul class="sorting-list">
                   <li> <a class="sorting-price sorting-active" href="#">По цене</a></li>
                   <li> <a class="sorting-type sorting-disabled" href="#">По типу</a></li>

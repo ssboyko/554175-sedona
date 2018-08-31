@@ -10,7 +10,7 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background-image: url("img/bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -48,6 +48,14 @@ a {
 .site-navigation a:active {
   background-color: #766357;
 }
+
+.slogan h2 {
+	font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+}
+
 
 .features-text {
   list-style: none;
@@ -87,7 +95,7 @@ a {
   color: #ffffff;
 
   background-color: #81b3d2;
-  background-image: url("img/feature-item-bg-blue.jpg");
+  background-image: url("../img/feature-item-bg-blue.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -121,15 +129,29 @@ a {
 
 
 .feature-item-gray {
-  list-style: none;
-  color: #ffffff; 
+  
+  color: #000000; 
 
   background-color: #eeeeee;
-  background-image: url("img/feature-item-bg-gray.jpg");
+  background-image: url("../img/feature-item-bg-gray.jpg");
   background-position: 0 0;
+
   background-repeat: repeat;
 }
 
+.feature-item-gray h2 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+    color: #000000
+}
+
+.feature-item-gray p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+    color: #333333
+}
 
 
 .booking h2 {
@@ -379,7 +401,7 @@ a {
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background-image: url("img/bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -571,4 +593,313 @@ a {
   font-weight: 400;
   color: #666666;
   background-color: #f2f2f2;
+}
+
+/* ----- Сеточные стили index.html----- */
+
+
+html,
+body {
+  min-width: 1200px;
+
+}
+
+.main-header {
+
+ margin: 0;
+ padding: 0;
+
+}
+
+.main-navigation {
+ width: 1056px;
+ display: flex;
+ margin: 0;
+ padding: 0;
+ flex-direction: column;
+}
+
+.main-header-logo {
+
+ width: 138px;
+ height: 71px;
+ order: 1;
+ margin: 0;
+ padding: 0;
+
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  flex-basis: 1200px;
+  list-style: none;
+  flex-wrap: wrap;
+ 
+}
+
+
+.container {
+	width: 1200px;
+	margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slogan {
+	margin: auto;
+}
+
+
+.index-columns {
+	width: 1200px;
+	margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-text {
+	margin: auto;
+}
+
+.feature-item-1 {
+	width: 1200px;
+	margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.feature-item-blue h2 {
+	margin: 0;
+	padding-bottom: 0;	
+    
+}
+
+.feature-item-blue { 
+	margin: 0;
+	padding: 0;
+	padding-bottom: 64px;
+	padding-top: 46px;
+    width: 400px;
+	text-align:center;
+	vertical-align: middle;
+	
+ }
+
+.feature-item-blue h2 {
+	margin: 0;
+	padding-bottom: 0;	
+    
+}
+
+.feature-item-image {
+	margin: 0;
+    padding: 0;
+	width: 800px;
+	height: 256px;
+	display:block;
+}
+
+.feature-item-advantage {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-basis: 1200px;
+  flex-wrap: wrap;
+  list-style: none;
+
+}
+
+.feature-item-advantage-house {
+  margin: 0;
+  padding: 0;
+  padding-top: 156px;
+  padding-bottom: 83px;
+  width: 400px;
+  text-align: center;
+  order:2;
+}
+
+.feature-item-advantage-food {
+  margin: 0;
+  padding: 0;
+  padding-top: 156px;
+  padding-bottom: 83px;
+  width: 400px;
+  text-align: center;
+  order:3;
+}
+
+.feature-item-advantage-souvenirs {
+  margin: 0;
+  padding: 0;
+  padding-top: 156px;
+  padding-bottom: 83px;
+  width: 400px;
+  text-align: center;
+  order:4;
+}
+
+.feature-item-2 {
+	width: 1200px;
+	margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+}
+
+
+.other-items {
+    width: 1200px;
+	margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.feature-item-gray {
+	width: 400px;
+	padding-top: 46px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.booking {
+	width: 1200px;
+	margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.booking-info-outline  {
+	margin: auto;
+    padding-top: 53px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.booking-info {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+} 
+
+.booking-form-outline {
+   margin: auto;
+   padding-bottom: 50;
+   text-align: center;
+   
+}
+
+.main-footer {
+	width: 1200px;
+	margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-hashtag {
+	width: 240px;
+	text-align: center;
+}
+
+.footer-social {
+	width: 400px;
+}
+
+.footer-copyright {
+	width: 240px;
+}
+
+/* ----- Сеточные стили hotels.html----- */
+
+.content {
+	width: 1200px;
+	margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filters {
+	width: 1200px;
+	margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.infrastructure {
+	width: 242px;
+	margin-left: 72px;
+	padding-top: 30px;
+	padding-bottom: 96px;
+}
+
+.accommodation {
+	width: 288px;
+	margin-left: 0px;
+	padding-top: 30px;
+	padding-bottom: 96px;
+}
+
+.price-filter {
+	width: 400px;
+	padding-top: 30px;
+	margin-right: auto;
+}
+
+.sorting {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.finded {
+	width: 116px;
+	margin-left: 72px;
+	padding-top: 30px;
+	padding-top: 34px;
+}
+
+.sort-type {
+	width: 78px;
+	margin-left: 50px;
+}
+
+.catalog-list {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+.catalog-item {
+    width: 1057px;
+    margin-left: 70;
+    margin-right: 73;
 }
