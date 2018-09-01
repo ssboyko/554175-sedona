@@ -612,11 +612,11 @@ body {
 }
 
 .main-navigation {
- width: 1056px;
+ width: 1px;
  display: flex;
- margin: 0;
+ margin: 0 auto;
  padding: 0;
- flex-direction: column;
+ justify-content: center; 
 }
 
 .main-header-logo {
@@ -638,11 +638,11 @@ body {
 
 
 .features-list {
-  margin: 0;
-  padding: 0;
-  
   display: flex;
-  flex-basis: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center; 
+  width: 1200px;
   list-style: none;
   flex-wrap: wrap;
  
@@ -651,10 +651,11 @@ body {
 
 .container {
 	width: 1200px;
-	margin: 0;
+	margin: 0 auto;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; 
 }
 
 .slogan {
@@ -813,7 +814,7 @@ body {
 
 .main-footer {
 	width: 1200px;
-	margin: 0;
+	margin: 0 auto;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -837,7 +838,7 @@ body {
 
 .content {
 	width: 1200px;
-	margin: 0;
+	margin: 0 auto;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -872,7 +873,7 @@ body {
 
 .sorting {
 	width: 1200px;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	display: flex;
 }
@@ -891,7 +892,7 @@ body {
 
 .catalog-list {
 	width: 1200px;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	display: flex;
 	list-style: none;
