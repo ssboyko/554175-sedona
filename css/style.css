@@ -349,9 +349,47 @@ a {
   text-align: center;
 }
 
+.social {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  margin-right: 6px;
+  background-color:#81b3d2;
+  
+
+ }
+
+.social-tw {
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.social-fb {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.social-youtube {
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.icon-copyright {
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .footer-social ul {
   list-style: none;
-  justify-content: space-between;
 }
 
 .footer-social a {
@@ -369,19 +407,19 @@ a {
   background-color: #5496bd;
 }
 
-.footer-copyright .button {
+.footer-copyright a {
   color: #9f9d9d;
 
   background-color: #ffffff;
 }
 
-.footer-copyright .button:hover {
+.footer-copyright a:hover {
   color: #81b3d2;
 
   background-color: #ffffff;
 }
 
-.footer-copyright .button:active {
+.footer-copyright a:active {
   color: #81b3d2;
 
   background-color: #bdbbbc;
@@ -872,7 +910,7 @@ body {
 }
 
 .footer-copyright {
-	width: 240px;
+	width: 196px;
 }
 
 /* ----- Сеточные стили hotels.html----- */
