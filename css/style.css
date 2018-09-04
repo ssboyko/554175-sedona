@@ -75,7 +75,7 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   width: 1200px;
   margin:0;
   
@@ -101,27 +101,27 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li:first-child {
   
-   margin:0;
+   margin-left:auto;
  
 }
 
 .site-navigation li:nth-child(2) {
  
   margin:0;
-  margin-right: 104px;
+ 
   
 }
 
 .site-navigation li:nth-child(3) {
-  margin-left: 104px;
+  margin: 0;
 
  
   
 }
 
 .site-navigation li:last-child {
-  margin-right: auto;
-  text-align:right;
+  margin-right:auto;
+ 
 }
 
 
