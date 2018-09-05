@@ -75,18 +75,16 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 1200px;
   margin:0;
-  
   padding: 0;
   list-style: none;
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45)
+  /*background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45)*/
 }
 
 .site-navigation li {
-  
   width: 240px;
   margin: 0;
   padding-top:22px;
@@ -95,35 +93,16 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #000000;
  
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45)
-}
-
-.site-navigation li:first-child {
   
-   margin-left:auto;
- 
 }
 
 .site-navigation li:nth-child(2) {
- 
-  margin:0;
- 
-  
+  margin-right: 120px;
 }
 
 .site-navigation li:nth-child(3) {
-  margin: 0;
-
- 
-  
+  margin-left: 120px;
 }
-
-.site-navigation li:last-child {
-  margin-right:auto;
- 
-}
-
 
 .site-navigation a {
   color: #000000;
@@ -155,7 +134,13 @@ input[type="radio"].visually-hidden {
 
 
 .slogan {
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 30px;
+  padding-top: 65px;
 }
 
 .slogan h2 {
@@ -548,13 +533,16 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 
+
+
 .main-footer  {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 
   color: #000000;
 
@@ -563,7 +551,11 @@ input[type="radio"].visually-hidden {
 
 .footer-hashtag {
   width: 240px;
-  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 47px;
+  padding-left: 60px;
+  padding-right: 40px;
+  margin-left: 72px;
 }
 
 
@@ -579,103 +571,98 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
   width: 400px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+
+  /*background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
+
+/*
 .social-outline {
   width: 400px;
   display: flex;
+  justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
-
-.social-outline li {
-  width: 46px;
-  margin-right: 6px;
-}
-
-.social-outline li:nth-child(3) {
-  width: 46px;
-  margin-right: auto;
-}
-
-.footer-copyright {
-  width: 196px;
-}
-
-.social {
-
-  width: 46px;
-  height: 48px;
-  margin: 0;
-  padding: 0;
-  margin-right: 6px;
-  background-color:#81b3d2;
-  
-
- }
-
-.social-tw {
-  background-image: url("../img/twitter.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-
-}
-
-.social-fb {
-  background-image: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-
-}
-
-.social-youtube {
-  background-image: url("../img/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-
-}
-
-.icon-copyright {
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
+*/
 
 .footer-social ul {
+  display: flex;
+  width: 150px;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.footer-social a {
-  color: #ffffff;
-  background-color: #81b3d2;
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color:#81b3d2;
+ }
+
+
+
+.footer-copyright {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  margin-top: 39px;
+  margin-bottom: 40px;
+  width: 196px;
+  padding-left: 15px;
+  margin-right: 72px;
+ justify-content: center;
+
+
+  /*background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
 
-.footer-social a:hover {
-  color: #ffffff;
+.footer-copyright svg {
+  padding-left: 7px;
+ 
+}
+
+
+
+.social-button:hover path {
+  fill: #ffffff;
+}
+
+.social-button:hover {
   background-color: #669ec0;
 }
 
-.footer-social a:active {
-  color: #ffffff;
+.social-button:active path {
+  fill: #88b6d1;
+}
+
+.social-button:active {
   background-color: #5496bd;
 }
 
 .footer-copyright a {
-  color: #9f9d9d;
 
-  background-color: #ffffff;
 }
 
-.footer-copyright a:hover {
-  color: #81b3d2;
-
-  background-color: #ffffff;
+.icon-copyright:hover {
+   fill: #81b3d2;
 }
 
-.footer-copyright a:active {
-  color: #81b3d2;
-
-  background-color: #bdbbbc;
+.icon-copyright:active {
+   fill: #bdbbbc;
 }
 
 
