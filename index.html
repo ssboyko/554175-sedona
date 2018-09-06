@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru"
+>
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+      body {
+      background-color: #f2f2f2;
+           }
+    </style>
   </head>
   <body>
 	<header class="main-header">
@@ -22,11 +28,13 @@
       </nav>
     </header>
     <main class="container">
-      <img src="img/background-photo.jpg" width="1200" height="508" alt="красивые горы, из-за которых я взял этот чёртов проект">
+    <div class="background">
+     
+    </div>
       <h1 class="visually-hidden">Sedona</h1>
       <section class="slogan">
-      	 	<h2 class="slogan-main">Седона - это небольшой городок в Аризоне,</h2>
-      		<h2 class="slogan-main">заслуживабший большего!</h2>	
+      	 	<h2 class="slogan-main">Седона - это небольшой городок в Аризоне, <br>
+      		заслуживабший большего!</h2>	
 	  </section>
       <section class="features">
         <div class="index-columns">
@@ -139,11 +147,12 @@
 	        </form>  
            </div>
       </section>
-      <div class="map">
-          <img src="img/map.jpg" width="1200" height="473" alt="Карта_штата">
-      </div>
+      
     </main>
    <footer class="main-footer">
+    <div class="map">
+          <img src="img/map.jpg" width="1200" height="473" alt="Карта_штата">
+      </div>
    	 <div class="footer-hashtag">
         <a class="hastag" href="https://www.instagram.com/htmlacademy">#visitSEDONA</a>
      </div>
