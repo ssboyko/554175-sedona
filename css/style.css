@@ -82,7 +82,7 @@ input[type="radio"].visually-hidden {
 }
 .site-navigation {
   display: flex;
-  flex-wrap: wrap;
+  
   justify-content: flex-start;
   width: 1200px;
   margin:0;
@@ -458,6 +458,8 @@ input[type="radio"].visually-hidden {
   background-color: #766357; 
   width: 568px;
   height: 86px;
+  border: none;
+  text-transform: uppercase;
 }
 
   .booking-form {
@@ -469,6 +471,8 @@ input[type="radio"].visually-hidden {
   transform: translateX(-50%);
   display: flex;
   flex-wrap: wrap;
+  width: 568px;
+  box-sizing: border-box;
 }
 
 .booking-form-title:hover {
@@ -490,12 +494,19 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 30px;
   
-
 }
 
-.booking-item label: {
-  margin-left: 55px;
+.booking-form label: {
+  width: 120px;
+  margin-right: 40px;
+  flex-shrink: 0;
+  text-align: left;
 }
 
 .booking-item input {
@@ -508,7 +519,8 @@ input[type="radio"].visually-hidden {
   border: none;
   box-sizing: border-box;
   margin-right: 55px;
-
+  margin: 0;
+  padding-left: 12px;
 }
 
 
@@ -531,6 +543,12 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+input[name^="date-"] {
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
 .adults {
   font-size: 14px;
   line-height: 26px;
@@ -539,22 +557,29 @@ input[type="radio"].visually-hidden {
   width: 50%;
   display: flex;
   flex-shrink: 0;
-  width: 410px;
+  width: 228px;
+  margin-right: 50px;
+}
+
+.adults label {
+  padding-right: 41px;
 }
 
 .adults input {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
   text-align: center;
   color: #000000;
   border: none;
   background-color: #f2f2f2;
+  width: 38px;
 }
 
 .number-of-people {
   display: flex;
-
+  margin-left: 
 }
 
 .children {
@@ -563,16 +588,27 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #000000;
   width: 50%;
+  display: flex;
+  flex-shrink: 0;
+  width: 178px;
 }
+
+.children label {
+   padding-right: 30px;
+}
+
 
 .children input {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
   color: #000000;
   border: none;
   background-color: #f2f2f2;
+  width: 38px;
+  margin-right: auto;
 
 }
 
@@ -629,6 +665,12 @@ input[type="radio"].visually-hidden {
   text-align: center;
   background-color: #81b3d2;
   color: #ffffff;
+  text-align: center;
+  width: 458px;
+  height: 58px;
+  margin-top: 54px;
+  text-transform: uppercase;
+  border: none;
 }
 
 .button:hover {
@@ -643,6 +685,7 @@ input[type="radio"].visually-hidden {
 
 
 .main-footer  {
+  
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -654,7 +697,9 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
   position: relative;
-  margin-top: -120px;
+  margin-top: -100px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .map {
@@ -663,12 +708,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-hashtag {
-  width: 240px;
-  padding-top: 45px;
-  padding-bottom: 47px;
-  padding-left: 60px;
-  padding-right: 40px;
-  margin-left: 72px;
+  width: 136px;
+  /*padding-top: 45px;*/
+  /*padding-bottom: 47px;*/
+  /*padding-left: 60px;*/
+  /*padding-right: 40px;*/
+  margin-left: 132px;
 }
 
 
@@ -684,8 +729,8 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
   width: 400px;
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
   padding: 0;
   margin: 0 auto;
 
@@ -730,13 +775,15 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   font-weight: 400;
   display: flex;
+  margin: 0;
+  padding: 0;
   align-items: center;
-  margin-top: 39px;
-  margin-bottom: 40px;
+ /* margin-top: 39px;
+  margin-bottom: 40px;*/
   width: 196px;
   padding-left: 15px;
-  margin-right: 72px;
- justify-content: center;
+  margin-right: 101px;
+ /*justify-content: center;*/
 
 
   /*background: rgba(234, 255, 45, 0.2);
@@ -766,6 +813,7 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 
+
 .footer-copyright a {
 
 }
@@ -781,17 +829,8 @@ input[type="radio"].visually-hidden {
 
 /* hotels.html */
 
-
-.content {
-  width: 1200px;
-  margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .inner-page {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -807,37 +846,61 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.site-navigation-current {
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.site-navigation-current: {
   color: #766357;
   background-color: #ffffff;
 }
 
-.filters {
-  width: 1200px;
-  margin: 0;
+
+
+.filter {
+    width: 1200px;
+    height: 217px;
+    margin: 0;
     padding: 0;
+    padding-top: 30px;
+    padding-left: 71px;
     display: flex;
+    background-image: url("../img/filter-background.png");
+    box-sizing: border-box;
+
 }
 
 .infrastructure {
   width: 242px;
-  margin-left: 72px;
-  padding-top: 30px;
-  padding-bottom: 96px;
+  margin: 0;
+  padding: 0;
+  /*margin-left: 72px;*/
+  /*padding-top: 30px;*/
+  /*padding-bottom: 96px;*/
 }
 
 .accommodation {
   width: 288px;
+  margin: 0;
+  padding: 0;
   margin-left: 0px;
-  padding-top: 30px;
-  padding-bottom: 96px;
+  /*padding-top: 30px;*/
+  /*padding-bottom: 96px;*/
 }
 
 
 .price-filter {
   width: 400px;
-  padding-top: 30px;
-  margin-right: auto;
+   margin: 0;
+  padding: 0;
+ /* padding-top: 30px;*/
+  margin-left: auto;
 }
 
 
@@ -855,12 +918,21 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #000000; 
+  /*background-color: #000000; */
 }
 
 .filter ul {
   list-style: none;
   line-height: 21px;
+  margin:0;
+  padding: 0;
+}
+
+.filter-input  label {
+  width: 27px;
+  height: 23px;
+  display: block; 
+  position: relative; 
 }
 
 .filter-input + label {
@@ -868,7 +940,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
-  background-color: #000000; 
+  background-color: #000000;
 }
 
 .filter-input:hover + label,
