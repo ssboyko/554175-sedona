@@ -240,7 +240,6 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   background-color: #81b3d2;
-  background-image: url("../img/feature-item-bg-blue.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 
@@ -381,7 +380,7 @@ input[type="radio"].visually-hidden {
   color: #000000; 
 
   background-color: #eeeeee;
-  background-image: url(../img/feature-item-bg-gray.jpg);
+  
   background-position: 0 0;
 
   background-repeat: repeat;
@@ -697,7 +696,7 @@ input[name^="date-"] {
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
   position: relative;
-  margin-top: -100px;
+  
   padding-top: 36px;
   padding-bottom: 36px;
 }
@@ -705,6 +704,7 @@ input[name^="date-"] {
 .map {
   background-image: url(../img/map.jpg);
   height: 593px;
+  margin-bottom: -100px;
 }
 
 .footer-hashtag {
@@ -842,7 +842,7 @@ input[name^="date-"] {
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background-image: url("../img/bg.jpg");
+ 
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -924,9 +924,9 @@ input[name^="date-"] {
 
 .filter ul {
   list-style: none;
-  margin:0;
+  margin: 0;
   padding: 0;
-  padding-top: 30px
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -957,7 +957,7 @@ input[name^="date-"] {
  }
 
  .filter-option input[type=checkbox]:checked + label:after {
-  width: 23px;
+  width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
  }
@@ -1114,13 +1114,15 @@ input[name^="date-"] {
 /*.filter-input:hover label,
 .filter-input:focus label {
   color: #ffffff;
-  background-color: #000000; */
+  background-color: #000000;
 }
+ */
 /*
 .filter-input:disabled label {
   color: #6a6a6a;
- /* background-color: #000000; */
+ /* background-color: #000000; 
 }
+*/
 
 
 /*.show-result  {
@@ -1136,38 +1138,54 @@ input[name^="date-"] {
   background-color: #ffffff;
 }*/
 
+
 .sorting {
   width: 1200px;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   box-sizing: border-box;
+  padding-top: 31px;
+  padding-bottom: 33px;
 }
 
 .finded {
-  width: 120px;
   margin: 0;
   padding: 0;
 }
 
 .sort-type {
-  width: 76px;
+   font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  margin-right: 40px;
   /*margin-left: 50px;*/
 }
+
 .sorting-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  width: 250px;
-
+  align-items: center;
 }
 
-.sorting-switch {
-  width: 35px;
+.sorting-list li:nth-child(1){
+  margin-right:  33px;
 }
+
+.sorting-list li:nth-child(2){
+  margin-right:  34px;
+}
+
+
+
+
 
 
 .sorting h2 {
@@ -1178,8 +1196,12 @@ input[name^="date-"] {
   font-weight: 700;
   margin: 0;
   padding: 0;
+  display: block;
+  margin-left: 71px;
+  margin-right: 48px;
 }
 
+/*
 .sorting p {
   font-size: 12px;
   line-height: 18px;
@@ -1188,8 +1210,9 @@ input[name^="date-"] {
   font-weight: 400;
   margin: 0;
   padding: 0;
+  margin-right: 40px;
 }
-
+*/
 
 /*.sorting-price,
 .sorting-type,
@@ -1198,7 +1221,12 @@ input[name^="date-"] {
   line-height: 18px;
 }
 */
-
+.sorting-switch {
+ margin: 0;
+ padding: 0;
+ margin-left: 505px;
+ 
+}
 
 .sorting-active {
   font-size: 12px;
@@ -1212,9 +1240,18 @@ input[name^="date-"] {
   background-color: #fefefe;
    font-size: 12px;
   line-height: 18px;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 
+
+.sorting-switch-up:hover image {
+  fill: #000000;
+}
+
+.sorting-switch-up:active path {
+  fill: #81b3d2;
+}
 
 .sorting-switch-up a,
 .sorting-switch-down a {
@@ -1236,6 +1273,29 @@ input[name^="date-"] {
 }
 
 
+.catalog-list {
+  
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+
+.catalog-item {
+  width: 1200px;
+  margin:0 auto;
+  padding: 0;
+  display: flex;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.catalog-list li:nth-child(3) {
+  border-bottom: 1px solid #e5e5e5;
+}
 
 
 
@@ -1260,6 +1320,22 @@ input[name^="date-"] {
     line-height: 21px;
     color: #333333;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-item-price {
+  font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-item-details {
+     
+     margin-top: 17px;
 }
 
 .button-details {
@@ -1267,7 +1343,9 @@ input[name^="date-"] {
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #81b3d2; 
+  background-color: #81b3d2;
+  width: 110px; 
+  padding: 8px 16px 7px 16px;
 }
 
 
@@ -1286,6 +1364,8 @@ input[name^="date-"] {
   font-weight: 700;
   color: #ffffff;
   background-color: #766357; 
+  width: 142px;
+  padding: 8px 16px 7px 16px;
 }
 
 .button-booking:hover {
@@ -1297,74 +1377,76 @@ input[name^="date-"] {
   background-color: #503e33;
 }
 
-.catalog-list {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-}
 
-
-.catalog-item {
-  width: 1200px;
-  margin:0 auto;
-  padding: 0;
-  display: flex;
-  border: 1px solid gray;
-}
 
 .catalog-item-image {
   display: block;
   width: 135px;
   height: 90px;
+  margin: 0;
+  padding: 0;
   margin-left: 72px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.catalog-item-description {
-  width: 258px;
-
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 0;
-  margin-left: 30px;
   
-  } 
-.description-outline {
-  display: block;
-  width: 258px;
+}
+
+
+
+.catalog-item-description {
+  /*width: 258px;*/
+  padding: 0;
+  margin: 0;
+  margin-left: 30px; 
+} 
+  /*display: flex;
+  flex-wrap: wrap;*/
+  
+  /*padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 30px;*/
+ 
+.description-outline-h {
   margin: 0;
   padding: 0;
-  padding-bottom: 18px;
-
 }
 
 
-.catalog-item-details {
-  width: 110px;
-  padding-bottom: 30px;
-  margin-right: 6px;
-  margin-left: auto;
+.description-outline {
+  /*display: block;*/
+  /*width: 258px;*/
+  margin: 0;
+  padding: 0;
+  margin-top: -6px;
+  /*padding-bottom: 18px;*/
+
 }
+
+.catalog-item-spans
+ {
+  padding: 0;
+  margin: 0;
+  
+}
+
 
 .catalog-item-booking {
   width: 142px;
-  margin-right: auto;
-  padding-bottom: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.rating-outline {
+      margin-left: auto;
+    padding-right: 70px;
 }
 
 .stars {
-  width: 110px;
+  /*width: 110px;*/
   margin: 0;
   padding: 0; 
-  margin-right: 73px;
+  text-align: right;
+  /*margin-right: 73px;
   margin-bottom: 47px;
-  margin-top: 29px; 
+  margin-top: 29px; */
 
 }
 
@@ -1375,14 +1457,13 @@ input[name^="date-"] {
   color: #666666;
   background-color: #f2f2f2;
 
-  width: 110px;
+  
   margin: 0;
+  margin-top: 48px;
   padding: 0; 
-  margin-right: 73px;
+  /*margin-right: 73px;
   margin-bottom: 30px;
-  margin-top: 180px; 
-
-
+  margin-top: 180px; */
 }
 
 
