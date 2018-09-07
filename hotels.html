@@ -24,21 +24,20 @@
             <section class="filters">
               <h1 class="visually-hidden"> Фильтры жилья </h1>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                    
                     <div class="infrastructure">
                         <fieldset>
                           <legend>Инфрастуктура</legend>
-                            <ul>
+                            <ul class="filter-ul">
                                 <li class="filter-option">
-                                    <input class=" filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked><span></span>
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
                                     <label for="filter-pool">Бассейн</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class=" filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking"><span></span>
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
                                   <label for="filter-parking">Парковка</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class=" filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wifi"><span></span>
+                                    <input class=" filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wifi">
                                   <label for="filter-wifi">WI-FI</label>
                                 </li>
                             </ul>
@@ -50,7 +49,7 @@
                 
                     <fieldset>
                       <legend>Тип жилья</legend>
-                      <ul>
+                      <ul class="filter-ul">
                             <li class="filter-option">
                                 <input class=" filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
                                 <label for="filter-hotel">Гостиница</label>
@@ -69,32 +68,35 @@
               </div>
         
               <div class="price-filter">
-                    <fieldset>
-                      <legend>Стоимость в сутки (Р):</legend>
-                        <label for="from-price">От
-                          <input type="number" class="min-price" id="from-price" value="0">
-                         </label>
-                         <label for="to-price">До
-                          <input type="number" class="max-price" id="to-price" value="0">
-                         </label>
-                          <input type="range" id="price" name="pricecount" min="0" max="3000" step="1"> <!--Как сделать такой бегунок? просто вставить картинку???-->
-                          <button type ="button" class="show-result" aria-label="показать">Показать</button>
-                    </fieldset>
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                            <div class="price-controls">
+                              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                            </div>
+                            <div class="range-controls">
+                              <div class="scale">
+                                <div class="bar"></div>
+                              </div>
+                              <div class="range-toggle range-toggle-min"></div>
+                              <div class="range-toggle range-toggle-max"></div>
+                            </div>
+                            <button class="btn-transparent" type="submit">Показать</button>
               </div>
                  </form>
              
             </section>   
         <section class="sorting">
           <h2 class="finded">Найдено: 3</h2>
-          <p class="sort-type"> Сортировка: </p>
-              <ul class="sorting-list">
+          <p class="sort-type"> Сортировка:</p>
+          <ul class="sorting-list">
                   <li> <a class="sorting-price sorting-active" href="#">По цене</a></li>
                   <li> <a class="sorting-type sorting-disabled" href="#">По типу</a></li>
                   <li> <a class="sorting-rating sorting-disabled" href="#">По рейтингу</a></li>
-              </ul>
+           </ul>
+          
               <p class="sorting-switch">
-                          <a class="sorting-switch-up up-disabled" href="#"></a>
-                          <a class="sorting-switch-down down-active" href="#"></a>
+                          <a class="sorting-switch-up up-disabled" href="#">U</a>
+                          <a class="sorting-switch-down down-active" href="#">D</a>
               </p>
         </section>
 
