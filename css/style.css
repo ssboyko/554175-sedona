@@ -62,6 +62,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0;
   justify-content: center; 
+  
 }
 
 .main-header {
@@ -93,10 +94,10 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li {
-  width: 240px;
+  
   margin: 0;
-  padding-top:22px;
-  padding-bottom:22px;
+  padding-top: 16px;
+  padding-bottom: 19px;
  
   text-align: center;
   color: #000000;
@@ -104,18 +105,27 @@ input[type="radio"].visually-hidden {
   
 }
 
+.site-navigation li:nth-child(1) {
+  margin-left: 71px;
+
+}
+
 .site-navigation li:nth-child(2) {
-  margin-right: 120px;
+  margin-left: 148px;
 }
 
 .site-navigation li:nth-child(3) {
-  margin-left: 120px;
+   margin-left: 390px;
 }
+
+.site-navigation li:nth-child(4) {
+  margin-left: 163px;
+}
+
 
 .site-navigation a {
   color: #000000;
 }
-
 
 
 .site-navigation a:hover {
@@ -140,20 +150,40 @@ input[type="radio"].visually-hidden {
 }
 
 .background {
+  width: 1200px;
   height: 510px; 
   background-image: url(../img/background-photo.jpg);
   position: relative;
+
+}
+
+.background::before {
+  height: 353px;
+  width: 459px;
+  content: "";
+  background: url(../img/welcome.png) no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  margin: auto;
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+  
+  
 }
 
 .background::after {
   height: 59px;
-  width: 100%;
+  width: 1200px;
   content: "";
   background: url(../img/intro-mask.svg);
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
-  z-index: 1;
+  z-index: 5;
   margin-bottom: -3px;
 }
 
@@ -175,7 +205,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   font-weight: 700;
   text-align: center;
-  padding-top: 65px;
+  padding-top: 57px;
   padding-bottom: 35px;
 }
 
@@ -184,9 +214,10 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  text-align: center;
+  
   color: #333333;
-  margin: 0;
+  margin: -7px;
+  padding: 0;
   padding-bottom: 57px;
 }
 
