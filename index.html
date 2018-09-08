@@ -36,8 +36,8 @@
                  <li class="feature-item-1">
                     <div class="feature-item-blue">
                       <h2>Настоящий городок</h2>
-                        <p> - №1 -  <br>
-                        <p>Седона - не аттракцион для туристов,<br>
+                        <p>  — №1  —  <br>
+                        <p>Седона  — не аттракцион для туристов,<br>
                         там течет своя жизнь</p>
                     </div>
                      <div class="feature-item-image">   
@@ -64,10 +64,11 @@
                     
                  </li>
            <li class="feature-item-2">
-              <div class="feature-item-blue">
-                <h2>Там есть мост дьявола</h2>
-                  <p> - №2 - <br>
-                  Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <div class="feature-item-blue ">
+                <h2>Там есть</h2> 
+                <h2>мост дьявола</h2>
+                  <p class="feature-item-devil">  — №2  — </p>
+                  <p class="feature-item-devil">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
               </div>
             <div class="feature-item-image">
                <img src="img/devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
@@ -75,22 +76,22 @@
            </li>
               <li class="other-items">
                   <div class="feature-item-gray">
-                      <h2>Небольшая площадь</h2>
-                      <p> - №3 -  <br>
-                      Все достопримечательности <br>
-                      находятся очень близко </p>
+                      <h2>Небольшая <br> площадь</h2>
+                      <p>  — №3  —  </p>
+                      <p class="feature-item-gray-text">Все достопримечательности </p>
+                      <p class="feature-item-gray-text">находятся очень близко </p>
                   </div>
                   <div class="feature-item-gray">
-                      <h2>Красивая дорога</h2>
-                      <p> - №4 -  <br>
-                      Ехать в Седону из Лас-Вегаса совсем <br>
-                      не скучно!</p>
+                      <h2>Красивая <br> дорога</h2>
+                      <p>  — №4  —  </p>
+                      <p class="feature-item-gray-text">Ехать в Седону из Лас-Вегаса совсем </p>
+                      <p class="feature-item-gray-text">не скучно!</p>
                   </div>
                   <div class="feature-item-gray">
-                      <h2>Мало туристов</h2>
-                      <p> - №5 - <br>
-                      Большинство едет в Гранд Каньон <br>
-                      и толпится там</p>
+                      <h2>Мало <br> туристов</h2>
+                      <p>  — №5  — </p>
+                      <p class="feature-item-gray-text">Большинство едет в Гранд Каньон</p>
+                      <p class="feature-item-gray-text">и толпится там</p>
                    </div>
               </li>       
           </ul>
@@ -108,10 +109,22 @@
                   <p class="booking-item">
     	          		<label class="arrival-date" for="arrival-input">Дата заезда:</label>
     	          			<input id="arrival-input" type="text" name="date-in" value="24 АПРЕЛЯ 2017">
+                      <button class="booking-form-calendar" aria-label="выбрать дату"><span class="calendar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                        <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                        </svg>
+                    </span>
+                      </button>
     	          	</p>
     	          	<p class="booking-item">
     	          		<label class="departure-date" for="departure-input">Дата выезда:</label>
     	          			<input id="departure-input" type="text" name="date-out" value="4 ИЮЛЯ 2017">
+                      <button class="booking-form-calendar" aria-label="выбрать дату"><span class="calendar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                        <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                        </svg>
+                    </span>
+                      </button>
     	          	</p>
     	          	<p class="adults">
     	          		  <label for="adults-guests">Взрослые:</label>
@@ -169,7 +182,7 @@
               </li>
         </ul>     
       </div>  
-      <p class="footer-copyright"> Website by
+      <p class="footer-copyright"> <span class="website-by">Website by</span>
         <a class="icon-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden">HTMLACADEMY</span>
           <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="115" height="41" viewBox="0 0 108.08 36.85">

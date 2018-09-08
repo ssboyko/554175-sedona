@@ -79,16 +79,17 @@ input[type="radio"].visually-hidden {
  order:0;
  margin: 0px;
  padding: 0;
-
 }
+
 .site-navigation {
   display: flex;
-  
-  justify-content: flex-start;
   width: 1200px;
   margin:0;
-  padding: 0;
   list-style: none;
+  justify-content: flex-start;
+  padding: 0;
+ 
+  
   /*background: rgba(234, 255, 45, 0.2);
   box-shadow: inset 0 0 0 2px rgb(234, 255, 45)*/
 }
@@ -99,27 +100,31 @@ input[type="radio"].visually-hidden {
   padding-top: 16px;
   padding-bottom: 19px;
  
-  text-align: center;
+  
   color: #000000;
- 
+  
   
 }
 
 .site-navigation li:nth-child(1) {
+  text-align: left;
   margin-left: 71px;
-
 }
 
 .site-navigation li:nth-child(2) {
+  text-align: left;
   margin-left: 148px;
 }
 
 .site-navigation li:nth-child(3) {
-   margin-left: 390px;
+  text-align: right;
+  margin-left: 388px;
 }
 
+
 .site-navigation li:nth-child(4) {
-  margin-left: 163px;
+   text-align: right;
+   margin-left: 165px;
 }
 
 
@@ -154,7 +159,7 @@ input[type="radio"].visually-hidden {
   height: 510px; 
   background-image: url(../img/background-photo.jpg);
   position: relative;
-
+  background-position-y: -56px;
 }
 
 .background::before {
@@ -263,6 +268,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item-blue {
+  
   list-style: none;
   font-size: 14px;
   line-height: 21px;
@@ -281,6 +287,7 @@ input[type="radio"].visually-hidden {
   width: 400px;
   text-align:center;
   vertical-align: middle;
+  box-sizing: border-box;
 }
 
 
@@ -290,10 +297,16 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
-  
-  margin: 0;
-  padding-bottom: 0;   
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 0;   
 }
+
+.feature-item-blue p {
+  padding-top: 11px;
+  margin-bottom: -5px;
+}
+
 
 .feature-item-image {
   margin: 0;
@@ -326,18 +339,19 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-weight: 700;
   color: #000000;
-  padding-top: 40px;
+  margin-top: 7px;
 }
 
 .feature-item-advantage-house {
   margin: 0;
   padding: 0;
   margin-top: 156px;
-  margin-bottom: 83px;
+ /* margin-bottom: 83px;*/
   width: 400px;
   text-align: center;
   order:2;
   position: relative;
+  padding-bottom: 84px;
 }
 
 .feature-item-advantage-house::before {
@@ -347,15 +361,20 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
   position: absolute;
-  top: -60px;
-  left: 162px;
+  top: -94px;
+  left: 40%;
+}
+
+.feature-item-advantage-text {
+  margin:0;
+  padding:0;
 }
 
 .feature-item-advantage-food {
   margin: 0;
   padding: 0;
   margin-top: 156px;
-  margin-bottom: 83px;
+  /*margin-bottom: 83px;*/
   width: 400px;
   text-align: center;
   order:3;
@@ -371,14 +390,14 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -60px;
+  top: -94px;
 }
 
 .feature-item-advantage-souvenirs {
   margin: 0;
   padding: 0;
   margin-top: 156px;
-  margin-bottom: 83px;
+  /*margin-bottom: 83px;*/
   width: 400px;
   text-align: center;
   order:4;
@@ -392,9 +411,13 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
   position: absolute;
-  left: 50%;
+  left: 59%%;
   transform: translateX(-50%);
-  top: -60px;
+  top: -98px;
+}
+
+.feature-item-devil {
+
 }
 
 .other-items {
@@ -418,7 +441,7 @@ input[type="radio"].visually-hidden {
 
   width: 400px;
   padding-top: 46px;
-  padding-bottom: 60px;
+  padding-bottom: 78px;
   text-align: center;
 }
 
@@ -426,14 +449,25 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-    color: #000000
+  color: #000000;
+  margin-bottom: 25px;
+  margin-top: 0px;
 }
 
-.feature-item-gray p {
+.feature-item-gray {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
     color: #333333
+}
+
+.feature-item-gray-text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+    color: #333333;
+    margin-bottom: -19px;
+    margin-top: 20px;
 }
 
 .booking {
@@ -449,13 +483,15 @@ input[type="radio"].visually-hidden {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 
 .booking-info-outline  {
   margin: auto;
     padding-top: 53px;
-    padding-bottom: 35px;
+    padding-bottom: 67px;
     text-align: center;
 }
 
@@ -466,9 +502,13 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #333333;
   
-  margin: auto;
+  margin: 0;
   padding: 0;
+  padding: auto;
   text-align: center;
+  padding-top: 22px;
+
+  margin-bottom: -22px;
 }
 
 .booking-form-outline {
@@ -540,7 +580,8 @@ input[type="radio"].visually-hidden {
 }
 
 .booking-item input {
-  width: 346px;
+  width: 335px;
+  height: 38px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -551,8 +592,54 @@ input[type="radio"].visually-hidden {
   margin-right: 55px;
   margin: 0;
   padding-left: 12px;
+  position: relative;
+  margin-right: -48px;
 }
 
+.booking-form-calendar {
+  display: block;
+  width: 38px;
+  height: 38px;
+ 
+  border: none;
+  position: relative;
+}
+
+.calendar-icon path {
+  fill: #a9a9a9;
+}
+
+.booking-form-calendar:hover path {
+  fill: #000000;
+}
+
+.booking-form-calendar:active path {
+  fill: #81b3d2;
+}
+
+.up-disabled path {
+    fill: #a9a9a9;
+}
+
+.up-disabled:hover path {
+    fill: #000000;
+}
+
+.up-disabled:active path {
+  fill: #81b3d2;
+}
+
+.down-active path {
+       fill: #81b3d2;
+}
+
+.down-active:hover path {
+    fill: #000000;
+}
+
+.down-active:active path {
+  fill: #81b3d2;
+}
 
 
 .booking-item::after {
@@ -573,12 +660,12 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-input[name^="date-"] {
+/*input[name^="date-"] {
   background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
   background-position: 100% 50%;
 }
-
+*/
 .adults {
   font-size: 14px;
   line-height: 26px;
@@ -588,11 +675,14 @@ input[name^="date-"] {
   display: flex;
   flex-shrink: 0;
   width: 228px;
+  margin: 0;
+  padding: 0;
   margin-right: 50px;
 }
 
 .adults label {
   padding-right: 41px;
+  padding-top: 5px;
 }
 
 .adults input {
@@ -605,6 +695,9 @@ input[name^="date-"] {
   border: none;
   background-color: #f2f2f2;
   width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
 }
 
 .number-of-people {
@@ -621,10 +714,13 @@ input[name^="date-"] {
   display: flex;
   flex-shrink: 0;
   width: 178px;
+  margin: 0;
+  padding: 0;
 }
 
 .children label {
    padding-right: 30px;
+   padding-top: 5px;
 }
 
 
@@ -638,12 +734,16 @@ input[name^="date-"] {
   border: none;
   background-color: #f2f2f2;
   width: 38px;
-  margin-right: auto;
+  height: 38px;
+  margin: 0;
+  padding: 0;
 
 }
 
 .booking-form-minus 
 {
+  width: 38px;
+  height: 38px;
   display: inline-block;
   font-size: 26px;
   line-height: 26px;
@@ -668,6 +768,8 @@ input[name^="date-"] {
 }
 
 .booking-form-plus {
+   width: 38px;
+  height: 38px;
   font-size: 26px;
   line-height: 26px;
   color: #a9a9a9;
@@ -735,7 +837,7 @@ input[name^="date-"] {
 .map {
   background-image: url(../img/map.jpg);
   height: 593px;
-  margin-bottom: -100px;
+  margin-bottom: -120px;
 }
 
 .footer-hashtag {
@@ -747,6 +849,9 @@ input[name^="date-"] {
   margin-left: 132px;
 }
 
+.hashtag {
+
+}
 
 .footer-hashtag a{
   font-size: 21px;
@@ -754,7 +859,8 @@ input[name^="date-"] {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-
+  display: inline-block;
+  padding-bottom: 3px;
   color:#000000;
 }
 
@@ -764,7 +870,7 @@ input[name^="date-"] {
   justify-content: center;*/
   padding: 0;
   margin: 0 auto;
-
+  margin-left: 131px;
   /*background: rgba(234, 255, 45, 0.2);
   box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
@@ -814,11 +920,17 @@ input[name^="date-"] {
   width: 196px;
   padding-left: 15px;
   margin-right: 101px;
+  margin-top: 3px;
  /*justify-content: center;*/
 
 
   /*background: rgba(234, 255, 45, 0.2);
   box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+}
+
+.website-by {
+  padding-bottom: 4px;
+
 }
 
 .footer-copyright svg {
@@ -900,11 +1012,12 @@ input[name^="date-"] {
     height: 217px;
     margin: 0;
     padding: 0;
-    padding-top: 30px;
-    padding-left: 71px;
+    /*padding-top: 30px;
+    padding-left: 71px;*/
     display: flex;
     background-image: url("../img/filter-background.png");
     box-sizing: border-box;
+    padding-top: 26px;
 
 }
 
@@ -921,18 +1034,19 @@ input[name^="date-"] {
   width: 288px;
   margin: 0;
   padding: 0;
-  margin-left: 0px;
+  margin-left: 14px;
   /*padding-top: 30px;*/
   /*padding-bottom: 96px;*/
 }
 
 
 .price-filter {
-  width: 400px;
+  width: 320px;
    margin: 0;
   padding: 0;
  /* padding-top: 30px;*/
-  margin-left: 130px;
+  margin-left: auto;
+  padding-right: 66px;
 }
 
 
@@ -951,18 +1065,20 @@ input[name^="date-"] {
   font-weight: 700;
   color: #ffffff;
   /*background-color: #000000; */
+  padding-left: 56px;
 }
 
 .filter ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 19px;
+  /*padding-top: 30px;
+  padding-bottom: 30px;*/
 }
 
 .filter-ul > li {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .filter-option {
@@ -971,7 +1087,7 @@ input[name^="date-"] {
   font-weight: 400;
   color: #ffffff;
   position: relative;
-  padding-left: 40px;
+  padding-left: 95px;
 }
 .filter-option input[type=checkbox] {
   display:none;
@@ -983,7 +1099,7 @@ input[name^="date-"] {
   height: 23px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 57px;
   background-image: url("../img/checkbox-off.svg");
  }
 
@@ -1049,8 +1165,8 @@ input[name^="date-"] {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+  width: 83px;
+  padding-left: 63px;
 }
 
 .price-controls input {
@@ -1123,6 +1239,8 @@ input[name^="date-"] {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+
+  margin-left: 82px;
 }
 
 .btn-transparent:hover {
@@ -1204,6 +1322,7 @@ input[name^="date-"] {
   padding: 0;
   display: flex;
   align-items: center;
+  margin-left: 2px;
 }
 
 .sorting-list li:nth-child(1){
@@ -1228,7 +1347,7 @@ input[name^="date-"] {
   margin: 0;
   padding: 0;
   display: block;
-  margin-left: 71px;
+  margin-left: 73px;
   margin-right: 48px;
 }
 
@@ -1284,11 +1403,17 @@ input[name^="date-"] {
   fill: #81b3d2;
 }
 
+.sorting-switch-up {
+  margin-right: 6px;
+  margin-top: 2px;
+}
+
 .sorting-switch-up a,
 .sorting-switch-down a {
   color: #cacaca;
   background-color: #000000;
   text-decoration: underline;
+  
 }
 
 .sorting-switch-up a:hover,
@@ -1317,7 +1442,7 @@ input[name^="date-"] {
 .catalog-item {
   width: 1200px;
   margin:0 auto;
-  padding: 0;
+  padding: 2px;
   display: flex;
   border: none;
   border-top: 1px solid #e5e5e5;
@@ -1337,6 +1462,10 @@ input[name^="date-"] {
   font-weight:700;
 }
 
+.catalog-item-title-3 {
+   padding-top: 1px;
+}
+
 .catalog-item-title:hover {
   color: #81b3d2;
 }
@@ -1353,6 +1482,17 @@ input[name^="date-"] {
     font-weight: 400;
     margin: 0;
     padding: 0;
+    width: 110px;
+    margin-right: 32px;
+}
+
+.catalog-item-category-2 {
+  padding-top: 1px;
+}
+
+
+.catalog-item-category-3 {
+  padding-top: 1px;
 }
 
 .catalog-item-price {
@@ -1362,7 +1502,17 @@ input[name^="date-"] {
     font-weight: 400;
     margin: 0;
     padding: 0;
+    width: 140px;
 }
+
+.catalog-item-price-2 {
+  padding-top: 1px;
+}
+
+.catalog-item-price-3 {
+   padding-top: 1px;
+}
+
 
 .catalog-item-details {
      
@@ -1376,9 +1526,17 @@ input[name^="date-"] {
   color: #ffffff;
   background-color: #81b3d2;
   width: 110px; 
-  padding: 8px 16px 7px 16px;
+  padding: 5px 19px 5px 17px;;
 }
 
+.button-details-2 {
+  padding-top: 1px;
+}
+
+
+.button-details-3 {
+   padding-top: 1px;
+}
 
 .button-details:hover {
   background-color: #669ec0;
@@ -1396,8 +1554,17 @@ input[name^="date-"] {
   color: #ffffff;
   background-color: #766357; 
   width: 142px;
-  padding: 8px 16px 7px 16px;
+  padding: 3px 16px 7px 16px;
 }
+
+.button-booking-2 {
+  padding-top: 1px;
+  }
+
+  .button-booking-3 {
+    padding-top: 1px;
+  }
+
 
 .button-booking:hover {
   background-color: #604e43;
@@ -1417,7 +1584,7 @@ input[name^="date-"] {
   margin: 0;
   padding: 0;
   margin-left: 72px;
-  
+  margin-top: -4px;
 }
 
 
@@ -1446,7 +1613,7 @@ input[name^="date-"] {
   /*width: 258px;*/
   margin: 0;
   padding: 0;
-  margin-top: -6px;
+  margin-top: -9px;
   /*padding-bottom: 18px;*/
 
 }
@@ -1475,9 +1642,9 @@ input[name^="date-"] {
   margin: 0;
   padding: 0; 
   text-align: right;
-  /*margin-right: 73px;
-  margin-bottom: 47px;
-  margin-top: 29px; */
+  margin-right: 2px;
+  
+  margin-top: -7px; 
 
 }
 
