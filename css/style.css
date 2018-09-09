@@ -1,4 +1,4 @@
-html {
+ html {
      background-color: #f2f2f2;
 }
  body {
@@ -30,7 +30,6 @@ html {
      border: 0;
      padding: 0;
      white-space: nowrap;
-     clip-path: inset(100%);
      clip: rect(0 0 0 0);
      overflow: hidden;
 }
@@ -388,7 +387,6 @@ html {
      color: #333333;
      margin: 0;
      padding: 0;
-     padding: auto;
      text-align: center;
      padding-top: 22px;
      margin-bottom: -22px;
@@ -495,8 +493,6 @@ html {
  .down-active:active path {
      fill: #81b3d2;
 }
- .booking-item::after {
-}
  .booking-item input:hover {
      background-color: #ebebeb;
      border: none;
@@ -539,7 +535,6 @@ html {
 }
  .number-of-people {
      display: flex;
-     margin-left:
 }
  .children {
      font-size: 14px;
@@ -758,10 +753,7 @@ html {
      display: flex;
      flex-wrap: wrap;
 }
- .site-navigation-current: {
-     color: #766357;
-     background-color: #ffffff;
-}
+
  .filter {
      width: 1200px;
      height: 217px;
