@@ -441,12 +441,7 @@ html {
      margin-bottom: 30px;
      position:relative;
 }
- .booking-form label: {
-     width: 120px;
-     margin-right: 40px;
-     flex-shrink: 0;
-     text-align: left;
-}
+
  .booking-item input {
      width: 335px;
      height: 38px;
