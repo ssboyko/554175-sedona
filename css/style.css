@@ -86,8 +86,8 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin:0;
   list-style: none;
-  justify-content: flex-start;
-  padding: 0;
+  justify-content: space-around;
+  padding: 0 72px;
  
   
   /*background: rgba(234, 255, 45, 0.2);
@@ -97,6 +97,7 @@ input[type="radio"].visually-hidden {
 .site-navigation li {
   
   margin: 0;
+  padding: 0;
   padding-top: 16px;
   padding-bottom: 19px;
  
@@ -108,23 +109,23 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li:nth-child(1) {
   text-align: left;
-  margin-left: 71px;
+  
 }
 
 .site-navigation li:nth-child(2) {
   text-align: left;
-  margin-left: 148px;
+  margin-right: 8%;
 }
 
 .site-navigation li:nth-child(3) {
   text-align: right;
-  margin-left: 388px;
+ 
 }
 
 
 .site-navigation li:nth-child(4) {
    text-align: right;
-   margin-left: 165px;
+   
 }
 
 
@@ -569,6 +570,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0;
   margin-bottom: 30px;
+  position:relative;
   
 }
 
@@ -593,7 +595,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding-left: 12px;
   position: relative;
-  margin-right: -48px;
+  margin-right: 10px;
 }
 
 .booking-form-calendar {
@@ -602,7 +604,9 @@ input[type="radio"].visually-hidden {
   height: 38px;
  
   border: none;
-  position: relative;
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
 
 .calendar-icon path {
@@ -1296,7 +1300,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   box-sizing: border-box;
   padding-top: 31px;
-  padding-bottom: 33px;
+  padding-bottom: 29px;
 }
 
 .finded {
@@ -1446,7 +1450,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   border: none;
   border-top: 1px solid #e5e5e5;
-  padding-top: 30px;
+  padding-top: 34px;
   padding-bottom: 30px;
 }
 .catalog-list li:nth-child(3) {
@@ -1483,7 +1487,8 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     width: 110px;
-    margin-right: 32px;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 .catalog-item-category-2 {
@@ -1516,7 +1521,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-details {
      
-     margin-top: 17px;
+     margin-top: 13px;
 }
 
 .button-details {
@@ -1535,7 +1540,7 @@ input[type="radio"].visually-hidden {
 
 
 .button-details-3 {
-   padding-top: 1px;
+   padding-top: 4px;
 }
 
 .button-details:hover {
@@ -1554,7 +1559,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #766357; 
   width: 142px;
-  padding: 3px 16px 7px 16px;
+  padding: 3px 16px 5px 16px;
 }
 
 .button-booking-2 {
@@ -1562,7 +1567,7 @@ input[type="radio"].visually-hidden {
   }
 
   .button-booking-3 {
-    padding-top: 1px;
+    padding-top: 4px;
   }
 
 
@@ -1622,7 +1627,9 @@ input[type="radio"].visually-hidden {
  {
   padding: 0;
   margin: 0;
-  
+  padding-top: 4px;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 
@@ -1655,10 +1662,13 @@ input[type="radio"].visually-hidden {
   color: #666666;
   background-color: #f2f2f2;
 
+  display: block;
+
   
   margin: 0;
-  margin-top: 48px;
-  padding: 0; 
+  
+  padding: 5px 19px 5px 17px;
+  margin-top: 42px;
   /*margin-right: 73px;
   margin-bottom: 30px;
   margin-top: 180px; */
