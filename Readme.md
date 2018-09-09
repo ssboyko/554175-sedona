@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Степан Бойко](https://up.htmlacademy.ru/htmlcss/22/user/554175).
-* Наставник: [Дмитрий Мальнев] (https://htmlacademy.ru/profile/fuckomako)
+* Наставник: [Евгений Алипкин] (https://htmlacademy.ru/profile/ealipkin)
 
 ---
 
