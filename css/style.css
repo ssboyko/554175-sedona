@@ -38,7 +38,6 @@
      line-height: 21px;
      color: #ffffff;
      background-color: #ffffff;
-     width: 1200px;
      display: flex;
      margin: 0 auto;
      padding: 0;
@@ -125,7 +124,7 @@
      margin: auto;
      top: 0;
      left: 0;
-     bottom: 0;
+     bottom: 5px;
      right: 0;
 }
  .background::after {
@@ -164,31 +163,24 @@
      padding: 0;
      padding-bottom: 57px;
 }
- .index-columns {
-     width: 1200px;
-     margin: 0;
-     padding: 0;
-     display: flex;
-     flex-wrap: wrap;
-}
  .features-list {
      display: flex;
      margin: 0 auto;
      padding: 0;
      justify-content: center;
-     width: 1200px;
+     width: 100%;
      list-style: none;
      flex-wrap: wrap;
 }
  .feature-item-1 {
-     width: 1200px;
+     width: 100%;
      margin: 0;
      padding: 0;
      display: flex;
      flex-wrap: wrap;
 }
  .feature-item-2 {
-     width: 1200px;
+     width: 100%;
      margin: 0;
      padding: 0;
      display: flex;
@@ -208,8 +200,8 @@
      padding: 0;
      padding-bottom: 64px;
      padding-top: 46px;
-     width: 400px;
-     text-align:center;
+     width: 33.3%;
+     text-align: center;
      vertical-align: middle;
      box-sizing: border-box;
 }
@@ -230,7 +222,7 @@
  .feature-item-image {
      margin: 0;
      padding: 0;
-     width: 800px;
+     width: 66.6%;
      height: 256px;
      display:block;
 }
@@ -243,7 +235,7 @@
      margin: 0;
      padding: 0;
      display: flex;
-     flex-basis: 1200px;
+     width: 100%;
      flex-wrap: wrap;
      list-style: none;
 }
@@ -259,7 +251,7 @@
      margin: 0;
      padding: 0;
      margin-top: 156px;
-     width: 400px;
+     width: 33.3%;
      text-align: center;
      order:2;
      position: relative;
@@ -283,7 +275,7 @@
      margin: 0;
      padding: 0;
      margin-top: 156px;
-     width: 400px;
+     width: 33.3%;
      text-align: center;
      order:3;
      position: relative;
@@ -303,7 +295,7 @@
      margin: 0;
      padding: 0;
      margin-top: 156px;
-     width: 400px;
+     width: 33.3%;
      text-align: center;
      order:4;
      position: relative;
@@ -320,7 +312,7 @@
      top: -98px;
 }
  .other-items {
-     width: 1200px;
+     width: 100%;
      margin: 0;
      padding: 0;
      display: flex;
@@ -332,7 +324,7 @@
      background-color: #eeeeee;
      background-position: 0 0;
      background-repeat: repeat;
-     width: 400px;
+     width: 33.3%;
      padding-top: 46px;
      padding-bottom: 78px;
      text-align: center;
@@ -360,7 +352,7 @@
      margin-top: 20px;
 }
  .booking {
-     width: 1200px;
+     width: 100%;
      margin: 0;
      padding: 0;
 }
@@ -374,7 +366,7 @@
 }
  .booking-info-outline {
      margin: auto;
-     padding-top: 53px;
+     padding-top: 51px;
      padding-bottom: 67px;
      text-align: center;
 }
@@ -393,6 +385,7 @@
      margin: 0 auto;
      text-align: center;
      position: relative;
+     margin-top: 4px;
 }
  .booking-form-title {
      font-size: 21px;
@@ -439,7 +432,7 @@
 }
  .booking-item input {
      width: 335px;
-     height: 38px;
+     height: 36px;
      font-size: 14px;
      line-height: 26px;
      font-weight: 700;
@@ -615,7 +608,7 @@
      text-align: center;
      width: 458px;
      height: 58px;
-     margin-top: 54px;
+     margin-top: 57px;
      text-transform: uppercase;
      border: none;
 }
@@ -627,7 +620,6 @@
      background-color: #5496bd;
 }
  .main-footer {
-     width:100%;
      margin: 0;
      text-align: center;
      padding: 0;
@@ -640,7 +632,7 @@
      z-index: 10;
      position: relative;
      padding-top: 36px;
-     padding-bottom: 36px;
+     padding-bottom: 31px;
 }
  .map {
      background-image: url(../img/map.jpg);
@@ -754,9 +746,10 @@
      margin: 0;
      padding: 0;
      display: flex;
-     background-image: url("../img/filter-background.png");
+     background-image: url(../img/filter-background.png);
      box-sizing: border-box;
      padding-top: 26px;
+     background-position-y: -57px;
 }
  .infrastructure {
      width: 242px;
@@ -767,7 +760,7 @@
      width: 288px;
      margin: 0;
      padding: 0;
-     margin-left: 14px;
+     margin-left: 12px;
 }
  .price-filter {
      width: 320px;
@@ -814,12 +807,12 @@
      position: absolute;
      top: 0;
      left: 57px;
-     background-image: url("../img/checkbox-off.svg");
+     background-image: url(../img/checkbox-off.svg);
 }
  .filter-option input[type=checkbox]:checked + label:after {
      width: 27px;
      height: 23px;
-     background-image: url("../img/checkbox-on.svg");
+     background-image: url(../img/checkbox-on.svg);
 }
 /*ЗДЕСЬ НАЧИНАЕТСЯ СЛОЖНЫЙ ФИЛЬТР В СЕДОНЕ */
  .filter-range {
@@ -836,8 +829,9 @@
 }
  .price-controls {
      position: relative;
-     height: 36px;
+     height: 34px;
      margin-bottom: 20px;
+     font-weight: 400;
      font-size: 0;
      border: 2px solid #ffffff;
      border-radius: 2px;
@@ -862,7 +856,7 @@
 }
  .price-controls .min-price, .price-controls .max-price {
      width: 83px;
-     padding-left: 63px;
+     padding-left: 65px;
 }
  .price-controls input {
      width: 50px;
@@ -908,7 +902,7 @@
  .btn-transparent {
      display: block;
      margin: 0 auto;
-     padding: 6px 35px;
+     padding: 6px 33px;
      font-size: 14px;
      line-height: 20px;
      color: #ffffff;
@@ -917,7 +911,7 @@
      border: 2px solid #ffffff;
      border-radius: 2px;
      cursor: pointer;
-     margin-left: 82px;
+     margin-left: 87px;
 }
  .btn-transparent:hover {
      color: #000000;
